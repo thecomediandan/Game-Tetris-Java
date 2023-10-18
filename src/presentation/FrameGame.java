@@ -6,11 +6,11 @@ import java.awt.*;
 public class FrameGame extends JFrame {
 
     private final JPanel main;
-    private final FrameGameAction frameGameAction;
+    private final PanelGameAction panelGameAction;
 
     public FrameGame() {
         main = new JPanel();
-        frameGameAction = new FrameGameAction();
+        panelGameAction = new PanelGameAction();
         build();
     }
     public void play() {
@@ -23,8 +23,8 @@ public class FrameGame extends JFrame {
         setSize(314,700);
         setLocationRelativeTo(null);
         main.setLayout(new FlowLayout(FlowLayout.CENTER,0,0));
-        main.add(frameGameAction);
-        main.setBackground(Color.GRAY);
+        main.add(panelGameAction);
+        main.setBackground(Color.DARK_GRAY);
         setContentPane(main);
     }
 
